@@ -1,0 +1,13 @@
+CREATE DATABASE login;
+USE login;
+
+CREATE TABLE usuario(
+	nome varchar(30) default'',
+    apelido varchar(30) default'',
+    senha varchar(30) default'',
+    primary key(apelido)
+);
+
+INSERT INTO usuario (apelido, senha) VALUES ('Aliston', 'ABC');
+
+SELECT * FROM usuario
